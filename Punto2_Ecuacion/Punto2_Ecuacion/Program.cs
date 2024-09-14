@@ -17,5 +17,25 @@
         Console.WriteLine("Ingrese el valor de 'b': ");
         b = Convert.ToDouble(Console.ReadLine());
 
+        //Revisar los casos de acuerdo a los valores de 'a' y 'b'
+        if (a == 0)
+        {
+            if (b == 0)
+            {
+                // Caso 1: a = 0 y b = 0
+                Console.WriteLine("Todos los Numeros son Solucion.");
+            }
+            else
+            {
+                // Caso 2: a = 0 y b != 0
+                Console.WriteLine("La ecuacion no tiene solucion.");
+            }
+        }
+        else
+        {
+            // Caso 3: a != 0, se aplica la formula x = -b/a
+            x = -b / a;
+            Console.WriteLine("La solucion de x = {x}");
+        }
     }
 }
