@@ -35,7 +35,7 @@
         {
             // Caso 3: a != 0, se aplica la formula x = -b/a
             x = -b / a;
-            Console.WriteLine("La solucion de x = {x}");
+            Console.WriteLine($"La solucion de x = {x}");
         }
     }
 }
