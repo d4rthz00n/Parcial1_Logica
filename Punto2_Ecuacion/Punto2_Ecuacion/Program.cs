@@ -9,6 +9,13 @@
 
         double a, b, x;
 
-        }
+        //Inicializar y Asignar Valor de 'a'
+        Console.WriteLine("Ingrese el valor de 'a': ");
+        a = Convert.ToDouble(Console.ReadLine());
+
+        //Inicializar y Asignar Valor de 'b'
+        Console.WriteLine("Ingrese el valor de 'b': ");
+        b = Convert.ToDouble(Console.ReadLine());
+
     }
 }
