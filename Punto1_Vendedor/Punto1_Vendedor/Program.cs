@@ -70,5 +70,21 @@
         //¿Cuál fue el promedio de las comisiones que recibió por cada venta? 
         PromComision = TotalComisiones / 3;
         Console.WriteLine($"El Promedio de las Comisiones por venta es: {PromComision:C}");
+
+        //Mirar si se hace acreador al bono de cumplimiento de la meta del mes.
+        TotalVentas = Venta1 + Venta2 + Venta3;
+        if (TotalVentas >= Objetivo)
+        {
+            Console.WriteLine("El vendedor ha superado el objetivo y recibe un beneficio de $100.000,00");
+            double TotalMasBono = TotalMes + Bono;
+        }
+        else 
+        {
+            Console.WriteLine("El vendedor no ha alcanzado el objetivo, por lo tanto no recibe el bono");
+        }
+
+        //Eso es to eso es to eso es todo amigos... mentiris, aun falta.
+        //Mostrar el total Final
+        Console.WriteLine($"El total final a recibir en el mes es: {TotalMes:C}");
     }
 }
