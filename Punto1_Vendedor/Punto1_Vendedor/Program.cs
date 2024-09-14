@@ -6,10 +6,10 @@
         //Un vendedor recibe un sueldo base de $XXXX. Ademas, Recibe una comision del 10% sobre el valor de venta que realiza.
 
         //Declarar las variables.
-        double SueldoBase, Venta1, Venta2, Venta3, Comision1, Comision2, Comision3, TotalComisiones, TotalMes, MaxComision, PromComision, TotalVentas, PerComision;
+        double SueldoBase, Venta1, Venta2, Venta3, Comision1, Comision2, Comision3, TotalComisiones, TotalMes, MaxComision, PromComision, TotalVentas;
 
         //Declarar las Constantes
-        const double Comision = 10; // Aqui se pone 10, ya que mas adelante en la operacion se hara la conversion para que pueda aplicarse el 10% de la comision.
+        const double PerComision = 0.10; // Aqui se pone 10, ya que mas adelante en la operacion se hara la conversion para que pueda aplicarse el 10% de la comision.
         const double Objetivo = 1000000; // 1 millon de pesos como objetivo
         const double Bono = 100000; // Bono de 100.000 pesos por superar la meta
 
@@ -33,7 +33,7 @@
 
         //Calcular comisiones
         //Aqui es mas adelante, aqui declaramos que el valor de la comision (10) equivale al 10%
-        PerComision = Comision * 100;
+        //PerComision = Comision * 100;
 
         //Calculamos la comision del 10% sobre cada venta realizada.
         Comision1 = Venta1 * PerComision;
@@ -44,7 +44,7 @@
 
         //¿Cuánto dinero obtendrá por concepto de comisiones por las tres ventas que realiza en el mes ?
         TotalComisiones = Comision1 + Comision2 + Comision3;
-        Console.WriteLine($"Total de Comisiones devengadas: {TotalComisiones:C}");
+        Console.WriteLine($"Total de Comisiones devengadas: {TotalComisiones:C0}");
 
         //¿Cuál es el total que recibirá en el mes tomando en cuenta su sueldo base y comisiones?
         TotalMes = SueldoBase + TotalComisiones;
@@ -59,12 +59,12 @@
         else if (Comision2 > Comision1 && Comision2 > Comision3)
         {
             MaxComision = Comision2;
-            Console.WriteLine($"La venta con Mayor Comision fue La Segunda Venta, con una comision de {MaxComision:C}");
+            Console.WriteLine($"La venta con Mayor Comision fue La Segunda Venta, con una comision de {MaxComision:C0}");
         }
         else
         {
             MaxComision = Comision3;
-            Console.WriteLine($"La venta con Mayor Comision fue La Tercer Venta, con una comision de {MaxComision:C}");
+            Console.WriteLine($"La venta con Mayor Comision fue La Tercer Venta, con una comision de {MaxComision:C0}");
         }
 
         //¿Cuál fue el promedio de las comisiones que recibió por cada venta? 
