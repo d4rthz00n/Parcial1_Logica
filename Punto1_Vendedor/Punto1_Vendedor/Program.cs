@@ -33,7 +33,6 @@
 
         //Calcular comisiones
         //Aqui es mas adelante, aqui declaramos que el valor de la comision (10) equivale al 10%
-        //PerComision = Comision * 100;
 
         //Calculamos la comision del 10% sobre cada venta realizada.
         Comision1 = Venta1 * PerComision;
@@ -44,11 +43,11 @@
 
         //¿Cuánto dinero obtendrá por concepto de comisiones por las tres ventas que realiza en el mes ?
         TotalComisiones = Comision1 + Comision2 + Comision3;
-        Console.WriteLine($"Total de Comisiones devengadas: {TotalComisiones:C0}");
+        Console.WriteLine($"Total de Comisiones devengadas: {TotalComisiones:C}");
 
         //¿Cuál es el total que recibirá en el mes tomando en cuenta su sueldo base y comisiones?
         TotalMes = SueldoBase + TotalComisiones;
-        Console.WriteLine($"Billullo Total: {TotalMes}");
+        Console.WriteLine($"Billullo Total: {TotalMes:C}");
 
         //¿Cuál fue la venta que le generó la mayor comisión?
         if (Comision1 > Comision2 && Comision1 > Comision3)
@@ -59,12 +58,12 @@
         else if (Comision2 > Comision1 && Comision2 > Comision3)
         {
             MaxComision = Comision2;
-            Console.WriteLine($"La venta con Mayor Comision fue La Segunda Venta, con una comision de {MaxComision:C0}");
+            Console.WriteLine($"La venta con Mayor Comision fue La Segunda Venta, con una comision de {MaxComision:C}");
         }
         else
         {
             MaxComision = Comision3;
-            Console.WriteLine($"La venta con Mayor Comision fue La Tercer Venta, con una comision de {MaxComision:C0}");
+            Console.WriteLine($"La venta con Mayor Comision fue La Tercer Venta, con una comision de {MaxComision:C}");
         }
 
         //¿Cuál fue el promedio de las comisiones que recibió por cada venta? 
